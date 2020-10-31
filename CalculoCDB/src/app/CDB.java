@@ -14,6 +14,7 @@ public class CDB {
 
 	}
 	public float getRendBruto() {
-		return 13.97f; //pela tecnica de falsificacao
+		float rend = (this.aplicacaoInicial*this.txJurosAnual/100)*this.dias/365;
+		return rend; //pela tecnica de falsificacao
 	}
 }
