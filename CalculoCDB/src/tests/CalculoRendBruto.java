@@ -17,6 +17,7 @@ public class CalculoRendBruto {
 	
 	@Test
 	public void testCalcularRendBruto() {
-		fail("Unidade não implementada");
+		cdb.cadastrarAplicacao(1000f, 8.5f, 60);
+		assertEquals(13.97f, cdb.getRendBruto(), 0);
 	}
 }
