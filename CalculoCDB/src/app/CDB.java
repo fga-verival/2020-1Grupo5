@@ -21,6 +21,13 @@ public class CDB {
 	}
 	
 	public float getImpostoRenda() {
-		return 3.14f;
+		float aliquotaImposto = 0;
+		
+		if (this.dias <= 180) aliquotaImposto = 22.5f;
+		else if (this.dias > 180 && this.dias <= 360) aliquotaImposto = 20f;
+		else if (this.dias > 360 && this.dias <= 720 ) aliquotaImposto = 17.5f;
+		else aliquotaImposto = 15f;
+		
+		return (this.getRendBruto() * aliquotaImposto) / 100;		
 	}
 }
