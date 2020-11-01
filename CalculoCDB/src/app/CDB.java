@@ -30,4 +30,8 @@ public class CDB {
 		
 		return (this.getRendBruto() * aliquotaImposto) / 100;		
 	}
+	
+	public float getRendimentoLiquido() {
+		return 1.08f;
+	}
 }
