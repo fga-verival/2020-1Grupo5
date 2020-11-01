@@ -20,4 +20,10 @@ public class CalculoRendimentoLiquido {
 		cdb.cadastrarAplicacao(1000f, 8.5f, 60);
 		assertEquals(1.08f, cdb.getRendimentoLiquido(), 0.01);
 	}
+	
+	@Test
+	public void testRendimentoLiquido2() {
+		cdb.cadastrarAplicacao(500f, 8.0f, 120);
+		assertEquals(2.03f, cdb.getRendimentoLiquido(), 0.01);
+	}
 }
