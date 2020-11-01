@@ -20,4 +20,10 @@ public class CalculoImpostoRenda {
 		cdb.cadastrarAplicacao(1000f, 8.5f, 60);
 		assertEquals(3.14f, cdb.getImpostoRenda(), 0.01);		
 	}
+	
+	@Test
+	public void testCalcularImpostoRenda2() {
+		cdb.cadastrarAplicacao(500f, 8.0f, 120);
+		assertEquals(2.96f, cdb.getImpostoRenda(), 0.01);
+	}
 }
