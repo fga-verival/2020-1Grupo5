@@ -15,7 +15,12 @@ public class CDB {
 		this.totalRend+=(this.aplicacaoInicial*this.txJurosAnual/100)*this.dias/365;
 
 	}
+	
 	public float getRendBruto() {
 		return this.totalRend;
+	}
+	
+	public float getImpostoRenda() {
+		return 3.14f;
 	}
 }
