@@ -32,6 +32,6 @@ public class CDB {
 	}
 	
 	public float getRendimentoLiquido() {
-		return 1.08f;
+		return (((this.aplicacaoInicial + this.getRendBruto() - this.getImpostoRenda()) / this.aplicacaoInicial) * 100) - 100;
 	}
 }
